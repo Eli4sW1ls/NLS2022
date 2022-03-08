@@ -1,13 +1,108 @@
-documentclass[a4paper]{article}
+\documentclass[a4paper,11pt]{article}
+\usepackage[margin=3cm]{geometry} % Make more reasonable margins in document
+\usepackage[parfill]{parskip}  % Remove LaTeX indents, and add interparagraph space
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
 
-\usepackage{sectsty}
-\usepackage{float}
+\usepackage{enumitem} % Enumerations met letters in de plaats van cijfers
+
+%%%%%%%%%%%%
+%%% MATH %%%
+%%%%%%%%%%%%
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage[output-decimal-marker={,}]{siunitx}
+\newcommand\Log[1]{ \mathop{{}^{#1}\mathrm{log}} }
+\DeclarePairedDelimiterX{\norm}[1]{\lVert}{\rVert}{#1}
+
+% https://tex.stackexchange.com/questions/94032/fancy-tables-in-latex
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+
+%Visuals
 \usepackage{graphicx}
-\usepackage{listings}
 \usepackage{subcaption}
-\usepackage{framed}
-\usepackage[]{enumitem}
-\sectionfont{\fontsize{12}{15}\selectfont}
-\usepackage[left=90.00pt, right=90.00pt, top=100.00pt, bottom=100.00pt]{geometry}
-\title{Homework Assigment 4: Modelling pandemics \\ \large Scientific Software / Technisch Wetenschappelijke Software 2021}
+\usepackage[colorlinks,allcolors=violet]{hyperref}
+\usepackage{url}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} 
+\usepackage{algorithm}
+\floatname{algorithm}{Algoritme}
+\usepackage{algorithmic}
+\usepackage{courier}
+\usepackage{wrapfig}
+\usepackage[export]{adjustbox}
+
+%Figures
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+%% the following commands are needed for some matlab2tikz features
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{grffile}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{cleveref}
+\usepackage{multirow}
+\usepackage{titlesec}
+
+\usepackage{multicol}
+\usepackage{tikz}
+\lstset{
+	language=Matlab,
+	%    basicstyle={\ttfamily \small},
+	basicstyle={\ttfamily \small},
+	%    keywordstyle=\underline,
+	numberstyle={\footnotesize},
+	%    morekeywords={ones,mod,isprime,inline,unique,factor,@},
+	%    flexiblecolumns=false,
+	%    emph={gamma,beta},
+	%    emphstyle=,
+	columns=fullflexible,
+	%    columns=flexible,
+	%    commentstyle={\slshape},
+	%    commentstyle={\normalfont},
+	commentstyle={\ttfamily},
+	stringstyle={\ttfamily \bfseries},
+	showstringspaces=false,
+	%    indent=1em,
+	%    xleftmargin=0.5em,
+	breaklines=false,
+	%    frame={l},
+	captionpos={t},
+	upquote=true, % such that we can copy-paste the code...
+	%    mathescape=true,
+	%    frame=single,     % boxed in a single line
+	%    frame=L,          % double line on the left
+	%    frame=l,          % single line on the left
+}
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=0.1pt] (char) {#1};}}
+\newcommand{\note}[1]{{\colorbox{yellow!40!white}{#1}}}
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\boxed{\text{Assignment \thesection}}}{1em}{}
+
+\setlength{\pdfpageheight}{11in}
+
+
+\title{Nonlinear Systems \\[1ex]
+    \Large \textsc{Assignments}}
 \author{Elias Wils}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents
+
+\newpage
+\section{Stability of equilibrium points and bifurcations}    
+
+\end{document}

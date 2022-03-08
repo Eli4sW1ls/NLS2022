@@ -1,0 +1,2 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Stability of equilibrium points and bifurcations}{4}{section.1}%
