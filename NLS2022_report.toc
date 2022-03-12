@@ -1,2 +1,5 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Stability of equilibrium points and bifurcations}{4}{section.1}%
+\contentsline {section}{\numberline {1}Stability of equilibrium points and \\bifurcations}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}A simple population model}{3}{subsection.1.1}%
+\contentsline {paragraph}{Question 1}{3}{subsection.1.1}%
+\contentsline {paragraph}{Question 2}{3}{table.caption.1}%

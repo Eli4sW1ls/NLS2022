@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.13)  9 MAR 2022 00:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.13)  13 MAR 2022 00:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -524,7 +524,12 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \sift@deathcycles=\count322
 \@vwid@loff=\dimen276
 \@vwid@roff=\dimen277
-)) (c:/texlive/2021/texmf-dist/tex/latex/pgfplots/pgfplots.sty (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+)) (c:/texlive/2021/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+) (c:/texlive/2021/texmf-dist/tex/latex/pgfplots/pgfplots.sty (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
  (c:/texlive/2021/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks36
@@ -711,8 +716,8 @@ File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfplots@tmpa=\dimen328
 \c@pgfplots@coordindex=\count344
 \c@pgfplots@scanlineindex=\count345
- (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)) (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex)
-(c:/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+ (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)) (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex)
+(c:/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
 \c@pgfplotsarray@tmp=\count346
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (c:/texlive/2021/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
 \c@pgfplotstable@counta=\count347
@@ -781,31 +786,51 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidth=\dimen349
 \titlewidthlast=\dimen350
 \titlewidthfirst=\dimen351
-) (c:/texlive/2021/texmf-dist/tex/latex/tools/multicol.sty
+) (c:/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count352
+\lst@gtempboxa=\box84
+\lst@token=\toks53
+\lst@length=\count353
+\lst@currlwidth=\dimen352
+\lst@column=\count354
+\lst@pos=\count355
+\lst@lostspace=\dimen353
+\lst@width=\dimen354
+\lst@newlines=\count356
+\lst@lineno=\count357
+\lst@maxwidth=\dimen355
+ (c:/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count358
+\lst@skipnumbers=\count359
+\lst@framebox=\box85
+) (c:/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (c:/texlive/2021/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
-\c@tracingmulticols=\count352
-\mult@box=\box84
-\multicol@leftmargin=\dimen352
-\c@unbalance=\count353
-\c@collectmore=\count354
-\doublecol@number=\count355
-\multicoltolerance=\count356
-\multicolpretolerance=\count357
-\full@width=\dimen353
-\page@free=\dimen354
-\premulticols=\dimen355
-\postmulticols=\dimen356
+\c@tracingmulticols=\count360
+\mult@box=\box86
+\multicol@leftmargin=\dimen356
+\c@unbalance=\count361
+\c@collectmore=\count362
+\doublecol@number=\count363
+\multicoltolerance=\count364
+\multicolpretolerance=\count365
+\full@width=\dimen357
+\page@free=\dimen358
+\premulticols=\dimen359
+\postmulticols=\dimen360
 \multicolsep=\skip67
 \multicolbaselineskip=\skip68
-\partial@page=\box85
-\last@line=\box86
-\maxbalancingoverflow=\dimen357
-\mult@rightbox=\box87
-\mult@grightbox=\box88
-\mult@firstbox=\box89
-\mult@gfirstbox=\box90
-\@tempa=\box91
-\@tempa=\box92
+\partial@page=\box87
+\last@line=\box88
+\maxbalancingoverflow=\dimen361
+\mult@rightbox=\box89
+\mult@grightbox=\box90
+\mult@firstbox=\box91
+\mult@gfirstbox=\box92
 \@tempa=\box93
 \@tempa=\box94
 \@tempa=\box95
@@ -840,69 +865,44 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \@tempa=\box124
 \@tempa=\box125
 \@tempa=\box126
-\c@minrows=\count358
-\c@columnbadness=\count359
-\c@finalcolumnbadness=\count360
-\last@try=\dimen358
-\multicolovershoot=\dimen359
-\multicolundershoot=\dimen360
-\mult@nat@firstbox=\box127
-\colbreak@box=\box128
-\mc@col@check@num=\count361
+\@tempa=\box127
+\@tempa=\box128
+\c@minrows=\count366
+\c@columnbadness=\count367
+\c@finalcolumnbadness=\count368
+\last@try=\dimen362
+\multicolovershoot=\dimen363
+\multicolundershoot=\dimen364
+\mult@nat@firstbox=\box129
+\colbreak@box=\box130
+\mc@col@check@num=\count369
+) (c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-c:/Users/Elias/git/NLS2022/NLS2022_report.tex:56: Undefined control sequence.
-<recently read> \lstset 
-                        
-l.56 \lstset
-            {
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-c:/Users/Elias/git/NLS2022/NLS2022_report.tex:57: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.57 	l
-       anguage=Matlab,
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 59.
-(c:/texlive/2021/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 71.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 99.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 101.
  (c:/texlive/2021/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./NLS2022_report.aux)
 \openout1 = `NLS2022_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -949,20 +949,20 @@ LaTeX hooks Warning: Generic hook
 (c:/texlive/2021/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 99.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 101.
  (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count362
-\scratchdimen=\dimen361
-\scratchbox=\box129
-\nofMPsegments=\count363
-\nofMParguments=\count364
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count365
-\MPscratchDim=\dimen362
-\MPnumerator=\count366
-\makeMPintoPDFobject=\count367
-\everyMPtoPDFconversion=\toks54
+\scratchcounter=\count370
+\scratchdimen=\dimen365
+\scratchbox=\box131
+\nofMPsegments=\count371
+\nofMParguments=\count372
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count373
+\MPscratchDim=\dimen366
+\MPnumerator=\count374
+\makeMPintoPDFobject=\count375
+\everyMPtoPDFconversion=\toks55
 ) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -978,9 +978,10 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 99.
+Package hyperref Info: Link coloring ON on input line 101.
  (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -988,83 +989,100 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (c:/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count368
+\c@section@level=\count376
 )
-LaTeX Info: Redefining \ref on input line 99.
-LaTeX Info: Redefining \pageref on input line 99.
-LaTeX Info: Redefining \nameref on input line 99.
+LaTeX Info: Redefining \ref on input line 101.
+LaTeX Info: Redefining \pageref on input line 101.
+LaTeX Info: Redefining \nameref on input line 101.
+ (./NLS2022_report.out) (./NLS2022_report.out)
 \@outlinefile=\write4
 \openout4 = `NLS2022_report.out'.
 
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-[1
-
-{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 102.
- (c:/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
+\c@lstlisting=\count377
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 104.
+(c:/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 102.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 104.
  (c:/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 102.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 104.
  (c:/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 102.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 104.
  (c:/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 102.
+(Font)              <12> on input line 104.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 102.
+(Font)              <8> on input line 104.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 102.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 102.
+(Font)              <6> on input line 104.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 104.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 102.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 104.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2]
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 104.
+ (c:/texlive/2021/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+) [1
+
+{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./NLS2022_report.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 3.
+)
 \tf@toc=\write5
 \openout5 = `NLS2022_report.toc'.
 
- [3]
+ [2]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 106.
+(Font)              <14.4> on input line 108.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 106.
+(Font)              <10> on input line 108.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 106.
- [4] (./NLS2022_report.aux)
+(Font)              <7> on input line 108.
 
-Package rerunfilecheck Warning: File `NLS2022_report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `NLS2022_report.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  7FFFF44A5BD5A41B0948EC87B0E9EB34;298.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 108.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+[3] (./NLS2022_report.aux)
+Package rerunfilecheck Info: File `NLS2022_report.out' has not changed.
+(rerunfilecheck)             Checksum: 7C3420014871A3A49776759E00875125;489.
  ) 
 Here is how much of TeX's memory you used:
- 42914 strings out of 478371
- 1002514 string characters out of 5852527
- 1348049 words of memory out of 5000000
- 60342 multiletter control sequences out of 15000+600000
- 454324 words of font info for 72 fonts, out of 8000000 for 9000
+ 44515 strings out of 478371
+ 1025148 string characters out of 5852527
+ 1535382 words of memory out of 5000000
+ 61913 multiletter control sequences out of 15000+600000
+ 464133 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,7n,94p,1230b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on NLS2022_report.pdf (4 pages, 137934 bytes).
+ 99i,11n,94p,1230b,764s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
+Output written on NLS2022_report.pdf (3 pages, 201023 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 

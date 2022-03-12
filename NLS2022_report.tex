@@ -35,6 +35,7 @@
 \usepackage{courier}
 \usepackage{wrapfig}
 \usepackage[export]{adjustbox}
+\usepackage{wasysym}
 
 %Figures
 \usepackage{pgfplots}
@@ -50,6 +51,7 @@
 \usepackage{cleveref}
 \usepackage{multirow}
 \usepackage{titlesec}
+\usepackage{listings}
 
 \usepackage{multicol}
 \usepackage{tikz}
@@ -103,6 +105,34 @@
 \tableofcontents
 
 \newpage
-\section{Stability of equilibrium points and bifurcations}    
+\section{Stability of equilibrium points and \\bifurcations}    
+\subsection{A simple population model}
+\paragraph{Question 1}\: The position and number of equilibrium points depends on the value of $\alpha$ and $\beta$.
+In \Cref{tbeq1} the different possible cases are listed together with information about the equilibrium points.
+When looking at the graph of $\dot{N}$ against $N$, a negative parabola can be observed, intersecting the $N$-axis in two points.
+When solving the quadratic equation for $\dot{N}=0$ with $\alpha$ and $\beta$ as unknown parameters, expressions shown in \eqref{eqN} for
+the equilibrium points ensue.
+\begin{align}
+	N_1 &= 0\\
+	N_2 &= \frac{K(\alpha-\beta)}{\alpha}
+	\label{eqN}
+\end{align}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|}
+	\hline
+	$\alpha<\beta$ & $\alpha>\beta$ & $\alpha=\beta$\\
+	\hline
+	$N_1$ is stable (\CIRCLE) & $N_1$ is unstable (\Circle) & $N_1=N_2$\\
+	$N_2$ is unstable (\Circle) & $N_2$ is stable (\CIRCLE) & half stable equilibrium point (\RIGHTcircle)\\
+	\hline
+	\end{tabular}
+	\caption{Characteristics of the different training algorithms for the given experiment, performed with and without noise. }
+	\label{tbeq1}
+\end{table}
+The type of bifurcation that occurs here is a transcritical one.\\\\
+\paragraph{Question 2}\: For the practical example described here, the solution for $t\rightarrow\inf$ will converge to one 
+of the equilibrium points. As $\alpha>\beta$, the second case in \Cref{tbeq1} is applicable. The only stable equilibrium point
+is $N_2=\frac{K(\alpha-\beta)}{\alpha}=10\:470\:086$.
 
 \end{document}
