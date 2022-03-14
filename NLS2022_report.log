@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.13)  13 MAR 2022 00:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.13)  13 MAR 2022 18:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1066,23 +1066,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--137
+
+ []
+
 [3] (./NLS2022_report.aux)
 Package rerunfilecheck Info: File `NLS2022_report.out' has not changed.
-(rerunfilecheck)             Checksum: 7C3420014871A3A49776759E00875125;489.
+(rerunfilecheck)             Checksum: FB4BD6DB27B6715C7A2DC3C6E5B9E057;642.
  ) 
 Here is how much of TeX's memory you used:
- 44515 strings out of 478371
- 1025148 string characters out of 5852527
- 1535382 words of memory out of 5000000
- 61913 multiletter control sequences out of 15000+600000
+ 44517 strings out of 478371
+ 1025178 string characters out of 5852527
+ 1536384 words of memory out of 5000000
+ 61914 multiletter control sequences out of 15000+600000
  464133 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,94p,1230b,764s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
-Output written on NLS2022_report.pdf (3 pages, 201023 bytes).
+Output written on NLS2022_report.pdf (3 pages, 202436 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 500000)
+ 37 words of extra memory for PDF output out of 10000 (max. 10000000)
 

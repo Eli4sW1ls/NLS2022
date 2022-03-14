@@ -3,3 +3,5 @@
 \contentsline {subsection}{\numberline {1.1}A simple population model}{3}{subsection.1.1}%
 \contentsline {paragraph}{Question 1}{3}{subsection.1.1}%
 \contentsline {paragraph}{Question 2}{3}{table.caption.1}%
+\contentsline {subsection}{\numberline {1.2}Gene control model}{3}{subsection.1.2}%
+\contentsline {paragraph}{Question 1}{3}{subsection.1.2}%
