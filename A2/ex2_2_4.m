@@ -19,8 +19,9 @@ p_start = [-1,h_fix];
 prob = coco_prob();
 prob = coco_set(prob, 'ode', 'vectorized', false);
 prob = coco_set(prob, 'cont', 'h_min', 0.01);
-prob = coco_set(prob, 'cont', 'h_max', 0.5);
+prob = coco_set(prob, 'cont', 'h_max', 0.05);
 prob = coco_set(prob, 'corr', 'ItMX', 10);
+prob = coco_set(prob, 'cont', 'ItMX', 100);
 
 % Do the actual continuation
 prob = ode_isol2ep(prob, '', ode_func, x_start, p_names, p_start);
@@ -50,8 +51,9 @@ p_start = [0.1,h_fix];
 prob = coco_prob();
 prob = coco_set(prob, 'ode', 'vectorized', false);
 prob = coco_set(prob, 'cont', 'h_min', 0.01);
-prob = coco_set(prob, 'cont', 'h_max', 0.5);
+prob = coco_set(prob, 'cont', 'h_max', 0.05);
 prob = coco_set(prob, 'corr', 'ItMX', 10);
+prob = coco_set(prob, 'cont', 'ItMX', 100);
 
 % Do the actual continuation
 prob = ode_isol2ep(prob, '', ode_func, x_start, p_names, p_start);

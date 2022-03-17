@@ -2,7 +2,7 @@ clear;
 close all;
 
 % fixed value for r
-r_fix = 0.5;
+r_fix = 0.01;       % non-generic turning point: r = 0?
 
 %% find the branch
 
@@ -12,8 +12,8 @@ p_names = {'r', 'h'};
 p_cont = {'h'};
 p_range = {[-2,2]};
 
-% x_start = ... fill in suitable starting point
-% p_start = ... fill in suitable starting point
+x_start = 0;
+p_start = [r_fix, 0];
 
 % Do the actual continuation
 prob = coco_prob();

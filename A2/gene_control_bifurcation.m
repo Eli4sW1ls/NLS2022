@@ -55,8 +55,8 @@ grid on;
 % Try to find a suitable starting point that results in the other branch
 % and plot the two branches together
 
-% x_start = ... fill in starting point here 
-% p_start = ... fill in starting point here
+x_start = [2,0];
+p_start = 4;
 
 % Do the continuation again
 prob = coco_prob();
