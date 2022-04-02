@@ -13,7 +13,7 @@ coco(prob, 'saddlenodebif', [], 1, {'r'}, [-2, 2]); % run continuation
 
 % coco(prob, 'saddlenodebif', 'ode', 'isol', 'ep', ...
 %     sn_func, 0, {'r'}, 1, ...
-%     {'r'}, [-2, 2]);
+%     {'r'}, [-2, 2]);  
 
 
 %% visualize
