@@ -2,6 +2,11 @@
 \contentsline {section}{\numberline {1}Stability of equilibrium points and \\bifurcations}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}A simple population model}{3}{subsection.1.1}%
 \contentsline {paragraph}{Question 1}{3}{subsection.1.1}%
-\contentsline {paragraph}{Question 2}{3}{table.caption.1}%
-\contentsline {subsection}{\numberline {1.2}Gene control model}{3}{subsection.1.2}%
-\contentsline {paragraph}{Question 1}{3}{subsection.1.2}%
+\contentsline {paragraph}{Question 2}{3}{figure.caption.2}%
+\contentsline {subsection}{\numberline {1.2}Gene control model}{4}{subsection.1.2}%
+\contentsline {paragraph}{Question 1}{4}{subsection.1.2}%
+\contentsline {paragraph}{Question 2}{4}{subsection.1.2}%
+\contentsline {paragraph}{i.}{4}{subsection.1.2}%
+\contentsline {paragraph}{ii.}{4}{subsection.1.2}%
+\contentsline {paragraph}{iii.}{5}{table.caption.3}%
+\contentsline {paragraph}{iv.}{5}{table.caption.3}%

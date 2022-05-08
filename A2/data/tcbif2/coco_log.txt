@@ -1,4 +1,4 @@
-MATLAB version 9.5.0.1067069 (R2018b) Update 4 on architecture win64
+MATLAB version 9.12.0.1884302 (R2022a) on architecture win64
 
 run: { runid='tcbif2' toolbox='empty' tbxctor=@empty_ctor isol_type='' sol_type='' dir='C:\Users\Elias\git\NLS2022\A2\data\tcbif2' bdfname='C:\Users\Elias\git\NLS2022\A2\data\tcbif2\bd.mat' logname='C:\Users\Elias\git\NLS2022\A2\data\tcbif2\coco_log.txt' scrname='C:\Users\Elias\git\NLS2022\A2\data\tcbif2\coco_scr.txt' }
 
@@ -72,7 +72,7 @@ POINT 1: computation finished
 
     STEP   DAMPING               NORMS              COMPUTATION TIMES
   IT SIT     GAMMA     ||d||     ||f||     ||U||   F(x)  DF(x)  SOLVE
-   0                          8.58e-17  1.49e-01    0.0    0.0    0.0
+   0                          8.44e-17  1.49e-01    0.0    0.0    0.0
 
  STEP   STEP SIZE      TIME        ||U||  LABEL  TYPE             r
     2    9.02e-02  00:00:00   1.4905e-01                -8.6054e-02
@@ -254,10 +254,10 @@ POINT 11: computation finished
    0                          8.69e-13  2.80e-06    0.0    0.0    0.0
 
  STEP   STEP SIZE      TIME        ||U||  LABEL  TYPE             r
-    0    1.00e-01  00:00:00   6.4118e-07      4  EP      4.5339e-07
-    1    4.75e-02  00:00:00   1.9136e-06      5  BP      1.2938e-06
-    1    4.75e-02  00:00:00   2.7999e-06      6  SN      1.8647e-06
-    1    4.75e-02  00:00:00   1.0155e-01                 5.8631e-02
+    0    1.00e-01  00:00:01   6.4118e-07      4  EP      4.5339e-07
+    1    4.75e-02  00:00:01   1.9136e-06      5  BP      1.2938e-06
+    1    4.75e-02  00:00:01   2.7999e-06      6  SN      1.8647e-06
+    1    4.75e-02  00:00:01   1.0155e-01                 5.8631e-02
 
 POINT 1: computation finished
 *********************************************************************
@@ -267,7 +267,7 @@ POINT 1: computation finished
    0                          8.44e-17  1.49e-01    0.0    0.0    0.0
 
  STEP   STEP SIZE      TIME        ||U||  LABEL  TYPE             r
-    2    9.02e-02  00:00:00   1.4905e-01                 8.6055e-02
+    2    9.02e-02  00:00:01   1.4905e-01                 8.6055e-02
 
 POINT 2: computation finished
 *********************************************************************
@@ -277,7 +277,7 @@ POINT 2: computation finished
    0                          5.20e-17  2.39e-01    0.0    0.0    0.0
 
  STEP   STEP SIZE      TIME        ||U||  LABEL  TYPE             r
-    3    1.71e-01  00:00:00   2.3930e-01                 1.3816e-01
+    3    1.71e-01  00:00:01   2.3930e-01                 1.3816e-01
 
 POINT 3: computation finished
 *********************************************************************
@@ -287,7 +287,7 @@ POINT 3: computation finished
    0                          3.93e-17  4.11e-01    0.0    0.0    0.0
 
  STEP   STEP SIZE      TIME        ||U||  LABEL  TYPE             r
-    4    3.26e-01  00:00:00   4.1078e-01                 2.3716e-01
+    4    3.26e-01  00:00:01   4.1078e-01                 2.3716e-01
 
 POINT 4: computation finished
 *********************************************************************
@@ -297,7 +297,7 @@ POINT 4: computation finished
    0                          2.78e-17  7.37e-01    0.0    0.0    0.0
 
  STEP   STEP SIZE      TIME        ||U||  LABEL  TYPE             r
-    5    5.00e-01  00:00:00   7.3658e-01                 4.2526e-01
+    5    5.00e-01  00:00:01   7.3658e-01                 4.2526e-01
 
 POINT 5: computation finished
 *********************************************************************
@@ -307,7 +307,7 @@ POINT 5: computation finished
    0                          0.00e+00  1.24e+00    0.0    0.0    0.0
 
  STEP   STEP SIZE      TIME        ||U||  LABEL  TYPE             r
-    6    5.00e-01  00:00:00   1.2366e+00                 7.1394e-01
+    6    5.00e-01  00:00:01   1.2366e+00                 7.1394e-01
 
 POINT 6: computation finished
 *********************************************************************
@@ -317,7 +317,7 @@ POINT 6: computation finished
    0                          1.11e-16  1.74e+00    0.0    0.0    0.0
 
  STEP   STEP SIZE      TIME        ||U||  LABEL  TYPE             r
-    7    5.00e-01  00:00:00   1.7366e+00                 1.0026e+00
+    7    5.00e-01  00:00:01   1.7366e+00                 1.0026e+00
 
 POINT 7: computation finished
 *********************************************************************
@@ -327,7 +327,7 @@ POINT 7: computation finished
    0                          1.11e-16  2.24e+00    0.0    0.0    0.0
 
  STEP   STEP SIZE      TIME        ||U||  LABEL  TYPE             r
-    8    5.00e-01  00:00:00   2.2366e+00                 1.2913e+00
+    8    5.00e-01  00:00:01   2.2366e+00                 1.2913e+00
 
 POINT 8: computation finished
 *********************************************************************
@@ -337,7 +337,7 @@ POINT 8: computation finished
    0                          1.11e-16  2.74e+00    0.0    0.0    0.0
 
  STEP   STEP SIZE      TIME        ||U||  LABEL  TYPE             r
-    9    5.00e-01  00:00:00   2.7366e+00                 1.5800e+00
+    9    5.00e-01  00:00:01   2.7366e+00                 1.5800e+00
 
 POINT 9: computation finished
 *********************************************************************

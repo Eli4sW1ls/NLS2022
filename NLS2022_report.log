@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.13)  13 MAR 2022 18:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.13)  8 MAY 2022 11:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -912,15 +912,15 @@ LaTeX Font Info:    ... okay on input line 101.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
-* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=426.79135pt
-* \textheight=674.33032pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
-* \topmargin=-23.91173pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -1056,38 +1056,81 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 108.
 
+<altb.png, id=42, 873.2625pt x 669.2503pt>
+File: altb.png Graphic file (type png)
+<use altb.png>
+Package pdftex.def Info: altb.png  used on input line 155.
+(pdftex.def)             Requested size: 204.85846pt x 156.99812pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 155.
+<agtb.png, id=43, 918.43124pt x 668.4975pt>
+File: agtb.png Graphic file (type png)
+<use agtb.png>
+Package pdftex.def Info: agtb.png  used on input line 155.
+(pdftex.def)             Requested size: 204.85846pt x 149.10999pt.
+<aisb.png, id=44, 832.61063pt x 658.71094pt>
+File: aisb.png Graphic file (type png)
+<use aisb.png>
+Package pdftex.def Info: aisb.png  used on input line 155.
+(pdftex.def)             Requested size: 204.85846pt x 162.07408pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 159--164
 
  []
 
+[3 <./altb.png> <./agtb.png> <./aisb.png>]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 200.
+ (c:/texlive/2021/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [4]
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+LaTeX Warning: Reference `fig:pp' on page 1 undefined on input line 255.
 
- []
+<r0.png, id=76, 550.30594pt x 542.77782pt>
+File: r0.png Graphic file (type png)
+<use r0.png>
+Package pdftex.def Info: r0.png  used on input line 270.
+(pdftex.def)             Requested size: 227.62206pt x 224.5032pt.
+<0r2.png, id=77, 547.2947pt x 539.01375pt>
+File: 0r2.png Graphic file (type png)
+<use 0r2.png>
+Package pdftex.def Info: 0r2.png  used on input line 270.
+(pdftex.def)             Requested size: 227.62206pt x 224.18001pt.
+<r2.png, id=78, 547.2947pt x 539.76656pt>
+File: r2.png Graphic file (type png)
+<use r2.png>
+Package pdftex.def Info: r2.png  used on input line 283.
+(pdftex.def)             Requested size: 227.62206pt x 224.49312pt.
+<rgt2.png, id=79, 546.54187pt x 539.76656pt>
+File: rgt2.png Graphic file (type png)
+<use rgt2.png>
+Package pdftex.def Info: rgt2.png  used on input line 283.
+(pdftex.def)             Requested size: 227.62206pt x 224.79785pt.
+<suppit.png, id=81, 971.12813pt x 296.60812pt>
+File: suppit.png Graphic file (type png)
+<use suppit.png>
+Package pdftex.def Info: suppit.png  used on input line 291.
+(pdftex.def)             Requested size: 409.71692pt x 125.13576pt.
+[5 <./r0.png (PNG copy)> <./0r2.png (PNG copy)> <./r2.png (PNG copy)> <./rgt2.png (PNG copy)>] [6 <./suppit.png (PNG copy)>] (./NLS2022_report.aux)
 
+LaTeX Warning: There were undefined references.
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--137
-
- []
-
-[3] (./NLS2022_report.aux)
 Package rerunfilecheck Info: File `NLS2022_report.out' has not changed.
 (rerunfilecheck)             Checksum: FB4BD6DB27B6715C7A2DC3C6E5B9E057;642.
  ) 
 Here is how much of TeX's memory you used:
- 44517 strings out of 478371
- 1025178 string characters out of 5852527
- 1536384 words of memory out of 5000000
- 61914 multiletter control sequences out of 15000+600000
- 464133 words of font info for 82 fonts, out of 8000000 for 9000
+ 44670 strings out of 478371
+ 1027119 string characters out of 5852527
+ 1548390 words of memory out of 5000000
+ 62042 multiletter control sequences out of 15000+600000
+ 471962 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,94p,1230b,764s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
-Output written on NLS2022_report.pdf (3 pages, 202436 bytes).
+ 99i,11n,94p,1230b,772s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
+Output written on NLS2022_report.pdf (6 pages, 529518 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
+ 17 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 

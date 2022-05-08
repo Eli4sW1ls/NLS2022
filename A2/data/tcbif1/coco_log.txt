@@ -1,4 +1,4 @@
-MATLAB version 9.5.0.1067069 (R2018b) Update 4 on architecture win64
+MATLAB version 9.12.0.1884302 (R2022a) on architecture win64
 
 run: { runid='tcbif1' toolbox='empty' tbxctor=@empty_ctor isol_type='' sol_type='' dir='C:\Users\Elias\git\NLS2022\A2\data\tcbif1' bdfname='C:\Users\Elias\git\NLS2022\A2\data\tcbif1\bd.mat' logname='C:\Users\Elias\git\NLS2022\A2\data\tcbif1\coco_log.txt' scrname='C:\Users\Elias\git\NLS2022\A2\data\tcbif1\coco_scr.txt' }
 
@@ -197,9 +197,9 @@ POINT 7: computation finished
    0                          2.78e-17  6.24e-08    0.0    0.0    0.0
 
  STEP   STEP SIZE      TIME        ||U||  LABEL  TYPE             r
-    8    5.00e-01  00:00:00   6.4118e-07      2  SN      4.5339e-07
-    8    5.00e-01  00:00:00   6.4118e-07      3  BP      4.5339e-07
-    8    5.00e-01  00:00:00   3.2257e-01                 2.2809e-01
+    8    5.00e-01  00:00:01   6.4118e-07      2  SN      4.5339e-07
+    8    5.00e-01  00:00:01   6.4118e-07      3  BP      4.5339e-07
+    8    5.00e-01  00:00:01   3.2257e-01                 2.2809e-01
 
 POINT 8: computation finished
 *********************************************************************
@@ -209,7 +209,7 @@ POINT 8: computation finished
    0                          0.00e+00  8.23e-01    0.0    0.0    0.0
 
  STEP   STEP SIZE      TIME        ||U||  LABEL  TYPE             r
-    9    5.00e-01  00:00:00   8.2257e-01                 5.8165e-01
+    9    5.00e-01  00:00:01   8.2257e-01                 5.8165e-01
 
 POINT 9: computation finished
 *********************************************************************
@@ -219,7 +219,7 @@ POINT 9: computation finished
    0                          0.00e+00  1.32e+00    0.0    0.0    0.0
 
  STEP   STEP SIZE      TIME        ||U||  LABEL  TYPE             r
-   10    5.00e-01  00:00:00   1.3226e+00      4          9.3520e-01
+   10    5.00e-01  00:00:01   1.3226e+00      4          9.3520e-01
 
 POINT 10: computation finished
 *********************************************************************

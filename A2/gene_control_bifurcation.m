@@ -22,10 +22,12 @@ p_start = 1;
 % A list of the names of the parameters being studied
 p_cont = {'r'};
 % A list of the ranges of the parameters being studied
-p_range = {[0,4]};
+p_range = {[0, 5]};
 
 % Do the actual continuation
 prob = coco_prob();
+prob = coco_set(prob, 'cont', 'ItMX', 1000);
+prob = coco_set(prob, 'cont', 'h_max', 0.01);
 prob = coco_set(prob, 'ode', 'vectorized', false);
 prob = ode_isol2ep(prob, '', ode_func, x_start, p_names, p_start);
 bd1 = coco(prob, prob_name, [], 1, p_cont, p_range);
@@ -60,6 +62,8 @@ p_start = 4;
 
 % Do the continuation again
 prob = coco_prob();
+prob = coco_set(prob, 'cont', 'ItMX', 1000);
+prob = coco_set(prob, 'cont', 'h_max', 0.01);
 prob = coco_set(prob, 'ode', 'vectorized', false);
 prob = ode_isol2ep(prob, '', ode_func, x_start, p_names, p_start);
 bd2 = coco(prob, prob_name, [], 1, p_cont, p_range);
@@ -76,3 +80,16 @@ plot3(r(stab_idxs), x(1,stab_idxs), x(2,stab_idxs), 'b.');
 plot3(r(saddle_idxs), x(1,saddle_idxs), x(2,saddle_idxs), 'g.');
 plot3(r(ustab_idxs), x(1,ustab_idxs), x(2,ustab_idxs), 'r.');
 hold off;
+
+ax = gca ;
+% ax.XAxisLocation = 'origin' ;
+% ax.YAxisLocation = 'origin' ;
+set(0,'DefaultLineColor','k') ;
+set(gca,'box','off') ;
+set(gca, 'FontSize', 17) ;
+xlabel('$r$','interpreter', 'latex') ;
+ylabel('$x$','interpreter', 'latex') ;
+zlabel('$y$','interpreter', 'latex') ;
+set(gca,'TickLabelInterpreter','latex') ;
+leg = legend() ;
+set(leg,'visible','off')
