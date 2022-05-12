@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.13)  8 MAY 2022 11:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.11.13)  12 MAY 2022 11:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1052,85 +1052,171 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 108.
 
+Overfull \hbox (18.39052pt too wide) in paragraph at lines 108--108
+|[]\T1/lmr/bx/n/14.4 Stability of equi-lib-rium points and bi-fur-ca-tions| 
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 108.
-
-<altb.png, id=42, 873.2625pt x 669.2503pt>
+<altb.png, id=56, 873.2625pt x 669.2503pt>
 File: altb.png Graphic file (type png)
 <use altb.png>
 Package pdftex.def Info: altb.png  used on input line 155.
 (pdftex.def)             Requested size: 204.85846pt x 156.99812pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 155.
-<agtb.png, id=43, 918.43124pt x 668.4975pt>
-File: agtb.png Graphic file (type png)
-<use agtb.png>
-Package pdftex.def Info: agtb.png  used on input line 155.
-(pdftex.def)             Requested size: 204.85846pt x 149.10999pt.
-<aisb.png, id=44, 832.61063pt x 658.71094pt>
+<aisb.png, id=57, 832.61063pt x 658.71094pt>
 File: aisb.png Graphic file (type png)
 <use aisb.png>
 Package pdftex.def Info: aisb.png  used on input line 155.
 (pdftex.def)             Requested size: 204.85846pt x 162.07408pt.
+<agtb.png, id=58, 918.43124pt x 668.4975pt>
+File: agtb.png Graphic file (type png)
+<use agtb.png>
+Package pdftex.def Info: agtb.png  used on input line 155.
+(pdftex.def)             Requested size: 204.85846pt x 149.10999pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 159--164
 
  []
 
-[3 <./altb.png> <./agtb.png> <./aisb.png>]
+[3 <./altb.png> <./aisb.png> <./agtb.png>]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 200.
  (c:/texlive/2021/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [4]
-
-LaTeX Warning: Reference `fig:pp' on page 1 undefined on input line 255.
-
-<r0.png, id=76, 550.30594pt x 542.77782pt>
+<r0.png, id=91, 550.30594pt x 542.77782pt>
 File: r0.png Graphic file (type png)
 <use r0.png>
 Package pdftex.def Info: r0.png  used on input line 270.
 (pdftex.def)             Requested size: 227.62206pt x 224.5032pt.
-<0r2.png, id=77, 547.2947pt x 539.01375pt>
+<0r2.png, id=92, 547.2947pt x 539.01375pt>
 File: 0r2.png Graphic file (type png)
 <use 0r2.png>
 Package pdftex.def Info: 0r2.png  used on input line 270.
 (pdftex.def)             Requested size: 227.62206pt x 224.18001pt.
-<r2.png, id=78, 547.2947pt x 539.76656pt>
+<r2.png, id=93, 547.2947pt x 539.76656pt>
 File: r2.png Graphic file (type png)
 <use r2.png>
 Package pdftex.def Info: r2.png  used on input line 283.
 (pdftex.def)             Requested size: 227.62206pt x 224.49312pt.
-<rgt2.png, id=79, 546.54187pt x 539.76656pt>
+<rgt2.png, id=94, 546.54187pt x 539.76656pt>
 File: rgt2.png Graphic file (type png)
 <use rgt2.png>
 Package pdftex.def Info: rgt2.png  used on input line 283.
 (pdftex.def)             Requested size: 227.62206pt x 224.79785pt.
-<suppit.png, id=81, 971.12813pt x 296.60812pt>
+<suppit.png, id=96, 971.12813pt x 296.60812pt>
 File: suppit.png Graphic file (type png)
 <use suppit.png>
-Package pdftex.def Info: suppit.png  used on input line 291.
-(pdftex.def)             Requested size: 409.71692pt x 125.13576pt.
-[5 <./r0.png (PNG copy)> <./0r2.png (PNG copy)> <./r2.png (PNG copy)> <./rgt2.png (PNG copy)>] [6 <./suppit.png (PNG copy)>] (./NLS2022_report.aux)
+Package pdftex.def Info: suppit.png  used on input line 292.
+(pdftex.def)             Requested size: 500.77129pt x 152.94724pt.
 
-LaTeX Warning: There were undefined references.
+Overfull \hbox (45.52718pt too wide) in paragraph at lines 292--293
+ [][] 
+ []
 
+[5 <./r0.png (PNG copy)> <./0r2.png (PNG copy)> <./r2.png (PNG copy)> <./rgt2.png (PNG copy)>] [6 <./suppit.png (PNG copy)>]
+<bif1x.png, id=107, 606.01407pt x 623.32875pt>
+File: bif1x.png Graphic file (type png)
+<use bif1x.png>
+Package pdftex.def Info: bif1x.png  used on input line 316.
+(pdftex.def)             Requested size: 227.62206pt x 234.12814pt.
+<bif1y.png, id=108, 606.01407pt x 630.10406pt>
+File: bif1y.png Graphic file (type png)
+<use bif1y.png>
+Package pdftex.def Info: bif1y.png  used on input line 316.
+(pdftex.def)             Requested size: 228.99051pt x 238.09598pt.
+<bifhxr-1.png, id=111, 556.32843pt x 606.76688pt>
+File: bifhxr-1.png Graphic file (type png)
+<use bifhxr-1.png>
+Package pdftex.def Info: bifhxr-1.png  used on input line 352.
+(pdftex.def)             Requested size: 195.75163pt x 213.50113pt.
+<bifhxr0.png, id=112, 558.58687pt x 605.26125pt>
+File: bifhxr0.png Graphic file (type png)
+<use bifhxr0.png>
+Package pdftex.def Info: bifhxr0.png  used on input line 352.
+(pdftex.def)             Requested size: 195.75163pt x 212.1032pt.
+<bifhxr1.png, id=113, 558.58687pt x 610.53094pt>
+File: bifhxr1.png Graphic file (type png)
+<use bifhxr1.png>
+Package pdftex.def Info: bifhxr1.png  used on input line 352.
+(pdftex.def)             Requested size: 195.75163pt x 213.94987pt.
+ [7 <./bif1x.png> <./bif1y.png>]
+<bifrxh-1.png, id=122, 556.32843pt x 609.02531pt>
+File: bifrxh-1.png Graphic file (type png)
+<use bifrxh-1.png>
+Package pdftex.def Info: bifrxh-1.png  used on input line 392.
+(pdftex.def)             Requested size: 195.75163pt x 214.29579pt.
+<bifrxh0.png, id=123, 536.0025pt x 609.02531pt>
+File: bifrxh0.png Graphic file (type png)
+<use bifrxh0.png>
+Package pdftex.def Info: bifrxh0.png  used on input line 392.
+(pdftex.def)             Requested size: 195.75163pt x 222.41785pt.
+<bifrxh1.png, id=124, 559.33969pt x 610.53094pt>
+File: bifrxh1.png Graphic file (type png)
+<use bifrxh1.png>
+Package pdftex.def Info: bifrxh1.png  used on input line 392.
+(pdftex.def)             Requested size: 195.75163pt x 213.6704pt.
+<foldur.png, id=126, 484.05844pt x 551.81157pt>
+File: foldur.png Graphic file (type png)
+<use foldur.png>
+Package pdftex.def Info: foldur.png  used on input line 418.
+(pdftex.def)             Requested size: 195.75163pt x 223.15408pt.
+<folduh.png, id=127, 478.78876pt x 554.82281pt>
+File: folduh.png Graphic file (type png)
+<use folduh.png>
+Package pdftex.def Info: folduh.png  used on input line 418.
+(pdftex.def)             Requested size: 195.75163pt x 226.83542pt.
+<foldrh.png, id=128, 485.56406pt x 552.56438pt>
+File: foldrh.png Graphic file (type png)
+<use foldrh.png>
+Package pdftex.def Info: foldrh.png  used on input line 418.
+(pdftex.def)             Requested size: 195.75163pt x 222.7587pt.
+ [8 <./bifhxr-1.png (PNG copy)> <./bifhxr0.png (PNG copy)> <./bifhxr1.png (PNG copy)> <./bifrxh-1.png (PNG copy)> <./bifrxh0.png (PNG copy)> <./bifrxh1.png (PNG copy)>]
+<h5.png, id=144, 620.3175pt x 492.33937pt>
+File: h5.png Graphic file (type png)
+<use h5.png>
+Package pdftex.def Info: h5.png  used on input line 450.
+(pdftex.def)             Requested size: 227.62206pt x 180.6602pt.
+<h25.png, id=145, 617.30624pt x 493.0922pt>
+File: h25.png Graphic file (type png)
+<use h25.png>
+Package pdftex.def Info: h25.png  used on input line 450.
+(pdftex.def)             Requested size: 227.62206pt x 181.81676pt.
+ [9 <./foldur.png> <./folduh.png> <./foldrh.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 454--457
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 457.
+(c:/texlive/2021/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+<bs.png, id=155, 653.44125pt x 532.23843pt>
+File: bs.png Graphic file (type png)
+<use bs.png>
+Package pdftex.def Info: bs.png  used on input line 490.
+(pdftex.def)             Requested size: 227.62206pt x 185.40102pt.
+<steps.png, id=156, 651.93562pt x 531.48563pt>
+File: steps.png Graphic file (type png)
+<use steps.png>
+Package pdftex.def Info: steps.png  used on input line 490.
+(pdftex.def)             Requested size: 227.62206pt x 185.5686pt.
+ [10 <./h5.png (PNG copy)> <./h25.png (PNG copy)>] [11 <./bs.png (PNG copy)> <./steps.png (PNG copy)>] (./NLS2022_report.aux)
 Package rerunfilecheck Info: File `NLS2022_report.out' has not changed.
-(rerunfilecheck)             Checksum: FB4BD6DB27B6715C7A2DC3C6E5B9E057;642.
+(rerunfilecheck)             Checksum: 6496A31BEE80E021CAA6876891BBA2EC;1141.
  ) 
 Here is how much of TeX's memory you used:
- 44670 strings out of 478371
- 1027119 string characters out of 5852527
+ 44863 strings out of 478371
+ 1030240 string characters out of 5852527
  1548390 words of memory out of 5000000
- 62042 multiletter control sequences out of 15000+600000
- 471962 words of font info for 91 fonts, out of 8000000 for 9000
+ 62199 multiletter control sequences out of 15000+600000
+ 477211 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,94p,1230b,772s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
-Output written on NLS2022_report.pdf (6 pages, 529518 bytes).
+ 99i,11n,94p,1230b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb>
+Output written on NLS2022_report.pdf (11 pages, 873187 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
- 17 named destinations out of 1000 (max. 500000)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 263 PDF objects out of 1000 (max. 8388607)
+ 187 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

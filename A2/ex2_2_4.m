@@ -2,7 +2,7 @@ clear;
 close all;
 
 % fixed value for h
-h_fix = -0.0025;
+h_fix = -0.0005;
 
 %% find first branch
 
@@ -18,10 +18,10 @@ p_start = [-1,h_fix];
 % Set some computation parameters
 prob = coco_prob();
 prob = coco_set(prob, 'ode', 'vectorized', false);
-prob = coco_set(prob, 'cont', 'h_min', 0.01);
-prob = coco_set(prob, 'cont', 'h_max', 0.05);
+% prob = coco_set(prob, 'cont', 'h_min', 0.1);
+prob = coco_set(prob, 'cont', 'h_max', 0.01);
 prob = coco_set(prob, 'corr', 'ItMX', 10);
-prob = coco_set(prob, 'cont', 'ItMX', 100);
+prob = coco_set(prob, 'cont', 'ItMX', 40);
 
 % Do the actual continuation
 prob = ode_isol2ep(prob, '', ode_func, x_start, p_names, p_start);
@@ -50,10 +50,10 @@ p_start = [0.1,h_fix];
 % Set some computation parameters
 prob = coco_prob();
 prob = coco_set(prob, 'ode', 'vectorized', false);
-prob = coco_set(prob, 'cont', 'h_min', 0.01);
-prob = coco_set(prob, 'cont', 'h_max', 0.05);
+% prob = coco_set(prob, 'cont', 'h_min', 0.1);
+prob = coco_set(prob, 'cont', 'h_max', 0.01);
 prob = coco_set(prob, 'corr', 'ItMX', 10);
-prob = coco_set(prob, 'cont', 'ItMX', 100);
+prob = coco_set(prob, 'cont', 'ItMX', 40);
 
 % Do the actual continuation
 prob = ode_isol2ep(prob, '', ode_func, x_start, p_names, p_start);
@@ -71,4 +71,19 @@ plot(r(ustab_idxs), x(ustab_idxs), 'r.');
 
 idx = coco_bd_idxs(bd2, 'SN');
 plot(r(idx), x(idx), 'ro','markerfacecolor','r');
-xlabel('r'); ylabel('x');
+% xlabel('r'); ylabel('x');
+
+%%
+
+ax = gca ;
+% ax.XAxisLocation = 'origin' ;
+% ax.YAxisLocation = 'origin' ;
+set(0,'DefaultLineColor','k') ;
+set(gca,'box','off') ;
+set(gca, 'FontSize', 17) ;
+xlabel('$r$','interpreter', 'latex') ;
+ylabel('$u$','interpreter', 'latex') ;
+set(gca,'TickLabelInterpreter','latex') ;
+leg = legend() ;
+set(leg,'visible','off')
+title("Bifurcation diagram for $h=-0.0005$", 'interpreter', 'latex')

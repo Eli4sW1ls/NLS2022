@@ -12,6 +12,8 @@ x_start = 0.3;
 p_start = [1,0.1];
 
 prob = coco_prob();
+prob = coco_set(prob, 'cont', 'ItMX', 1000);
+prob = coco_set(prob, 'cont', 'h_max', 0.001);
 prob = coco_set(prob, 'ode', 'vectorized', false);
 prob = ode_isol2ep(prob, '', ode_func, x_start, p_names, p_start);
 bd1 = coco(prob, prob_name, [], 1, p_cont, p_range);
@@ -24,6 +26,8 @@ p_cont = {'r', 'h'};
 p_range = {[0, 2], [-0.1, 0.1]};
 
 prob = coco_prob();
+prob = coco_set(prob, 'cont', 'ItMX', 1000);
+prob = coco_set(prob, 'cont', 'h_max', 0.001);
 prob = coco_set(prob, 'ode', 'vectorized', false);
 fold = coco_bd_labs(bd1, 'SN');
 prob = ode_SN2SN(prob, '', prob_name, fold(1));
@@ -34,5 +38,18 @@ r = coco_bd_col(bd2, 'r');
 h = coco_bd_col(bd2, 'h');
 
 plot3(x,r,h,'k.');
-xlabel('x'); ylabel('r'); zlabel('h');
+% xlabel('x'); ylabel('r'); zlabel('h');
 grid on
+
+ax = gca ;
+% ax.XAxisLocation = 'origin' ;
+% ax.YAxisLocation = 'origin' ;
+set(0,'DefaultLineColor','k') ;
+set(gca,'box','off') ;
+set(gca, 'FontSize', 17) ;
+xlabel('$u$','interpreter', 'latex') ;
+ylabel('$r$','interpreter', 'latex') ;
+zlabel('$h$','interpreter', 'latex') ;
+set(gca,'TickLabelInterpreter','latex') ;
+leg = legend() ;
+set(leg,'visible','off')

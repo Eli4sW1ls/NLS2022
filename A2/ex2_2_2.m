@@ -2,7 +2,7 @@ clear;
 close all;
 
 % fixed value for h
-h_fix = -0.05;
+h_fix = 0.04;
 
 %% find first branch
 
@@ -18,6 +18,8 @@ p_start = [1, h_fix];
 
 % Do the actual continuation
 prob = coco_prob();
+prob = coco_set(prob, 'cont', 'ItMX', 1000);
+prob = coco_set(prob, 'cont', 'h_max', 0.01);
 prob = coco_set(prob, 'ode', 'vectorized', false);
 prob = ode_isol2ep(prob, '', ode_func, x_start, p_names, p_start);
 bd1 = coco(prob, prob_name, [], 1, p_cont, p_range);
@@ -43,12 +45,14 @@ xlabel('r'); ylabel('x');
 % imperfection broke the equilibrium branch and that there is a second
 % branch.
 
-x_start = 1;
-p_start = [-1, h_fix];
+x_start = -1;
+p_start = [1, h_fix];
 
 % Do the actual continuation
 prob = coco_prob();
 prob = coco_set(prob, 'ode', 'vectorized', false);
+prob = coco_set(prob, 'cont', 'ItMX', 1000);
+prob = coco_set(prob, 'cont', 'h_max', 0.01);
 prob = ode_isol2ep(prob, '', ode_func, x_start, p_names, p_start);
 bd1 = coco(prob, prob_name, [], 1, p_cont, p_range);
 
@@ -66,3 +70,16 @@ idx = coco_bd_idxs(bd1, 'SN');
 plot(r(idx), x(idx), 'ro','markerfacecolor','r');
 xlabel('r'); ylabel('x');
 hold off;
+
+ax = gca ;
+% ax.XAxisLocation = 'origin' ;
+% ax.YAxisLocation = 'origin' ;
+set(0,'DefaultLineColor','k') ;
+set(gca,'box','off') ;
+set(gca, 'FontSize', 17) ;
+xlabel('$r$','interpreter', 'latex') ;
+ylabel('$u$','interpreter', 'latex') ;
+set(gca,'TickLabelInterpreter','latex') ;
+leg = legend() ;
+set(leg,'visible','off')
+title("$h=0.1$", 'interpreter', 'latex')
