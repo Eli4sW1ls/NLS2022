@@ -17,3 +17,14 @@
 \contentsline {paragraph}{Question 2}{8}{figure.caption.7}%
 \contentsline {paragraph}{Question 3}{9}{figure.caption.8}%
 \contentsline {paragraph}{Question 4}{9}{figure.caption.9}%
+\contentsline {section}{\numberline {3}Study of a predator-prey model}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1} A qualitative study without external influence}{12}{subsection.3.1}%
+\contentsline {paragraph}{Question 1}{12}{subsection.3.1}%
+\contentsline {paragraph}{Question 2}{12}{subsection.3.1}%
+\contentsline {paragraph}{Question 3}{14}{table.caption.12}%
+\contentsline {paragraph}{Question 4}{15}{table.caption.12}%
+\contentsline {paragraph}{Question 5}{15}{table.caption.13}%
+\contentsline {paragraph}{Question 6}{16}{table.caption.13}%
+\contentsline {subsection}{\numberline {3.2}Bifurcation analysis}{16}{subsection.3.2}%
+\contentsline {paragraph}{Question 1}{16}{subsection.3.2}%
+\contentsline {paragraph}{Question 2}{16}{subsection.3.2}%

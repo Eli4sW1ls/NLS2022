@@ -12,6 +12,7 @@
 \usepackage{mathtools}
 \usepackage{amssymb}
 \usepackage[output-decimal-marker={,}]{siunitx}
+\usepackage{amsmath}
 \newcommand\Log[1]{ \mathop{{}^{#1}\mathrm{log}} }
 \DeclarePairedDelimiterX{\norm}[1]{\lVert}{\rVert}{#1}
 
@@ -45,7 +46,6 @@
 \usetikzlibrary{arrows.meta}
 \usepgfplotslibrary{patchplots}
 \usepackage{grffile}
-\usepackage{amsmath}
 \usepackage{caption}
 \usepackage{float}
 \usepackage{cleveref}
@@ -491,4 +491,227 @@ a few plots are shown, which demonstrate the effects of these parameters when th
 	\caption{Bifurcation diagrams in function of $r$ for $h=-0.0005$ and $h=-0.0025$, obtained with \texttt{COCO}.}
 \end{figure}
 In both plots, the second part of the leftmost branch is lost. This shows why the right continuation parameters are so important.
+
+\newpage
+\section{Study of a predator-prey model}
+A nonlinear predator-prey model is given, with four physical parameters $a$, $b$, $c$ and $d$. These can have the following interpretations:
+\begin{itemize}
+	\item $\mathbf{a}$\; This parameter controls the exponential growth of the prey population, or reproduction. This parameter  The value of this parameter is 0.2. 	
+ 	\item $\mathbf{b}$\; This parameter represents the predator's actions, it is namely the rate of predation. The value of this parameter is 0.5 throughout this assignment.
+  	\item $\mathbf{c}$\; The occurrence of natural deaths of the predator population is represented by $c$.
+	\item $\mathbf{d}$\; $d$ is an additional parameter which represents emigration of the predators.
+\end{itemize}
+\subsection{ A qualitative study without external influence}
+\paragraph{Question 1}\; When the system is simulated for $x$ in function of time taking $y=0$,
+the system always converges to one of three equilibrium points. For this to occur, the initial value
+$x_0\in[0,1.5]$. The behaviour of the system in function of the initial condition can be described as such:
+\begin{itemize}
+	\item $x_0\in[0,0.2)$\; For this initial condition, the equation will always converge to the equilibrium $x^*=0$. This looks
+	like a stable equilibrium because of this. However, as the equation is not simulated for $x_0<0$, there can only be stated 
+	that $x^*=0$ is at least a half stable equilibrium point, with the stable side in the positive $x-t$-plane.
+	\item $x_0\in(0.2,1.5]$\; This range for the initial condition also results in a convergence towards a second stable equilibrium.
+	\item $x_0=a=0.2$\; The value of this initial condition is also its respective equilibrium point, $x^*=0.2$. This however, is an 
+	unstable equilibrium point, as for any perturbation on the initial condition $x_0=0.2$ 
+\end{itemize}
+\paragraph{Question 2}\; The steady state solutions with $d=0$ can be computed easily by solving the following system:
+\begin{equation*}
+	\begin{cases}
+		& -x^3 + (1+a)x^2 - ax -bxy=0\\
+		& (x-c)y=0
+	\end{cases}
+\end{equation*}
+It can be seen easily that the only two solutions for the second equation are $x^*=c$ and/or $y^*=0$.
+These solutions can be filled in in the first equation, yielding the following steady state solutions:
+
+\begin{align}
+&x^*=0\;\;\; ,  &y^*=0\label{eq:eq1}\\
+&x^*=\frac{a+1+\sqrt{a^2-2a+1}}{2}=a\;\;\; , &y^*=0\label{eq:eq2}\\
+&x^*=\frac{a+1-\sqrt{a^2-2a+1}}{2}=1\;\;\; , &y^*=0\label{eq:eq3}\\
+&x^*=c\;\;\; , &y^*=\frac{(c-a)(1-c)}{b}\label{eq:eq4}
+\end{align}
+To determine the stability of these fixed points, the Jacobian needs to be constructed.
+Then the determinant and trace can be evaluated to get an idea of the stability.
+The Jacobian in symbolic version looks like this:
+\begin{equation*}
+	\begin{bmatrix}
+		-3x^2+2(1+a)-by-a & -bx\\
+		y & x-c
+	\end{bmatrix}
+\end{equation*}
+The parameters and variables can then be filled in, and the equilibrium points will be described by means of the parameter $c$.
+The results are summarized in \Cref{tb:q2}.
+\begin{table}[H]
+	\hspace{-10mm}
+	\begin{tabular}{c|c|c|c|c|}
+	& Equilibrium \eqref{eq:eq1} & Equilibrium \eqref{eq:eq2} & Equilibrium \eqref{eq:eq3} & Equilibrium \eqref{eq:eq4}\\
+	\hline
+	Determinant ($\Delta$) & $ac$ & $(-a^2+a)(a-c)$ & $(a-1)(1-c)$ & $ c(c - a)(1 - c)$\\
+	\hline
+	Trace ($\tau$) & $-a-c$ & $-a^2+2a-c$ & $a-c$ & $c(1 + a - 2c)$\\
+	\hline
+	$\tau^2-4\Delta$ & $(c-a)^2$ & $(c-a^2)^2$ & $\left(c+a-2\right)^2$ & $c(4c^3-4ac^2+(a^2-2a-3)c+4a)$\\\hline
+	\end{tabular}
+	\captionsetup{width=0.9\textwidth}
+	\caption{Trace and determinant of the fixed points with $d=0$.}
+	\label{tb:q2}
+\end{table}
+The stability for these different fixed points can be expressed in function of $c$ with the given values for $a=0.2$ and $b=0.5$.\\
+There is an important note to make: linear stability analysis is performed on the Jacobian, which is a good way to get an accurate approximation of the behaviour
+of the fixed points. However, when the boundary cases are studied, i.e. the cases when either $\Delta=0$, $\tau=0$ or $\tau^2-4\Delta=0$, this linear \textbf{approximation}
+is not reliable as there are still some nonlinear perturbations that are not modeled by the Jacobian. These boundary cases are still included in the analysis below,
+but they are just to indicate that they will occur approximately at the values specified (also indicated by ``$\approx$'').
+\begin{itemize}
+	\item \underline{Equilibrium \eqref{eq:eq1}}: \\ 
+		Eigenvalues \& eigenvectors Jacobian: $\lambda_1=-a$ with $v_1=\begin{pmatrix}1\\0\end{pmatrix}$ and\\ $\lambda_2=-c$ with $v_2=\begin{pmatrix}ab/(a - c)\\1\end{pmatrix}$.
+		\begin{itemize}
+			% \item[\boxed{\textbf{c<0}}  ] Here $\Delta<0$, which means that this will yield a \textbf{saddle point}.
+			% From the eigenvalues and eigenvectors the stable and unstable manifold can be derived. The stable manifold is spanned by $v_1$ as $\lambda_1<0$ and the unstable manifold is spanned by
+			% $v_2$ as $\lambda_2$ is positive.
+   			\item[\boxed{\mathbf{c\approx0}}  ] $\Delta=0$, which means that there is a \textbf{line of (stable) fixed points} present as one of the eigenvalues becomes 0.
+      		\item[\boxed{\textbf{c>0}}  ] $\Delta>0$, $\tau<0$. $\tau^2-4\Delta>0$ except for when $\mathbf{c\approx a}$, when $\tau^2-4\Delta$ will become 0. When 
+			  $c\approx a$, a \textbf{stable degenerate node} will arise.\\ The other values for $c>0$ will yield a \textbf{stable node}.
+			  To get its slowest eigendirection, the eigenvector corresponding to the eigenvalue that is smallest in absolute value needs to be found.
+			  The slowest eigendirection will depend on if $a<c$ or not.
+			  If $a<c$, $v_1$ is the slowest eigendirection, and if $a>c$, $v_2$ is the slowest eigendirection of the stable node.
+		\end{itemize}
+	\item \underline{Equilibrium \eqref{eq:eq2}}: \\
+		Eigenvalues \& eigenvectors Jacobian: $\lambda_1=-a^2+a$ with $v_1=\begin{pmatrix}1\\0\end{pmatrix}$ and\\ $\lambda_2=a-c$ with $v_2=\begin{pmatrix}0\\- a^2 + a\end{pmatrix}$.
+		\begin{itemize}
+			\item[\boxed{\textbf{0<c<a}}  ] $\Delta>0$ and $\tau>0$, as well as $\tau^2-4\Delta>0$. This means that this fixed point will be an \textbf{unstable node}.\\
+			The slowest eigendirection again depends on $c$: if $c<a^2$, then it is $v_1$ as $\lambda_1$ is the smallest
+			eigenvalue. If $a^2<c<a$, then $v_2$ is the slowest eigendirection.\\
+			A special case occurs when $c\approx a^2$. Then $\tau^2-4\Delta=0$, so this fixed point will become an unstable degenerate node.
+			\item[\boxed{\mathbf{c\approx a}}  ] $\Delta=0$, so one of the eigenvalues is zero ($\lambda_2=0$). There will be a whole \textbf{line of unstable fixed points}, as $\lambda_1>0$.
+   			\item[\boxed{\textbf{c>a}}  ] $\Delta<0$, so this fixed point will become a \textbf{saddle node}. The unstable manifold is spanned by $v_1$ ($\lambda_1>0$) and the stable 
+			   manifold by $v_2$ ($\lambda_2<0$).
+		\end{itemize}
+	\item \underline{Equilibrium \eqref{eq:eq3}}: \\
+		Eigenvalues \& eigenvectors Jacobian: $\lambda_1=a-1$ with $v_1=\begin{pmatrix}1\\0\end{pmatrix}$ and\\ $\lambda_2=1-c$ with $v_2=\begin{pmatrix}b/(c + a - 2)\\1\end{pmatrix}$.
+		\begin{itemize}
+			\item[\boxed{\textbf{0<c<1}}  ] $\Delta<0$, so a \textbf{saddle node} is present. The stable manifold is spanned by $v_1$ as $\lambda_1<0$ and the unstable manifold is defined
+			by $v_2$ as $\lambda_2>0$ in this case.
+   			\item[\boxed{\mathbf{c\approx 1}}  ] $\Delta=0$, a \textbf{line of (stable) fixed points} is present.
+      		\item[\boxed{\textbf{c>1}}  ] $\Delta>0$, $\tau<0$. $\tau^2-4\Delta$ can vary, when it occurs that $c\approx 3-0.75a=1.5$, then $\tau^2-4\Delta=0$ and a 
+			  \textbf{degenerate node} will arise. \\ When $c<3-0.75a=1.5$, then $\tau^2-4\Delta>0$ and this point will become a \textbf{stable node}. The slow eigendirection again depends on $c$:
+			  when $1<c<1.5<2-a$, $\lambda_2$ will be the smallest eigenvalue (in absolute value) and $v_2$ will define the slowest eigendirection.\\
+			%   A special case occurs when $c\approx 2-a$, which causes that $\tau^2-4\Delta=0$, so a stable degenerate node arises.
+		\end{itemize}
+	\item \underline{Equilibrium \eqref{eq:eq4}}: \\
+		\begin{itemize}
+			% \item[\boxed{\textbf{c<0}}  ] $\Delta>0$ and $\tau<0$. Regarding $\tau^2-4\Delta$, there are different possibilities. When $a=0.2$ is filled in, $\tau^2-4\Delta=0$ for 
+			% for a value $c\approx-0.9318$; a \textbf{stable degenerate node} is established.\\ When $c<-0.9318$, $\tau^2-4\Delta>0$, so a \textbf{stable node} arises.\\ When $c>-0.9318$, 
+			% $\tau^2-4\Delta<0$, so a \textbf{stable spiral} occurs.
+			\item[\boxed{\mathbf{c\approx0}}  ] $\Delta=\tau=0$. A \textbf{plane of neutrally stable fixed points} is present as both eigenvalues of the Jacobian are zero.
+   			\item[\boxed{\textbf{0<c<a}\; \& \;\textbf{c>1}}  ] $\Delta<0$, so then this fixed point becomes a \textbf{saddle node}.
+      		\item[\boxed{\textbf{a<c<1}}  ] $\Delta>0$: \begin{itemize}[leftmargin=20mm]
+															\item[\underline{a < c < 0.241}] $\tau>0$ and $\tau^2-4\Delta>0$ $\Rightarrow$ \textbf{unstable node}\\
+															When $c\approx0.241$, $\tau^2-4\Delta=0$ $\Rightarrow$ \textbf{(unstable) degenerate node}
+               												\item[\underline{0.241 < c < (1+a)/2}] $\tau>0$ and $\tau^2-4\Delta<0$ $\Rightarrow$ \textbf{unstable spiral}\\
+															   When $c\approx(1+a/2)$, $\tau=0$ $\Rightarrow$ \textbf{neutrally stable center}.
+															\item[\underline{(1+a)/2 < c < 0.89}] $\tau<0$ and $\tau^2-4\Delta<0$ $\Rightarrow$ \textbf{stable spiral}\\
+															When $c\approx0.89$, $\tau^2-4\Delta=0$ $\Rightarrow$ \textbf{(stable) degenerate node}
+															\item[\underline{0.89 < c < 1}] $\tau<0$ and $\tau^2-4\Delta>0$ $\Rightarrow$ \textbf{stable node}\\
+														\end{itemize}
+   			\item[\boxed{\mathbf{c\approx 1}}  ] $\Delta=0$, so a whole \textbf{line of (stable) nodes} is present.\\
+		\end{itemize}
+\end{itemize}
+An example of each parameter region listed here is shown \Cref{fig:stab2}. The boundary cases are not added, as the values that are computed analytically 
+for the linear approximation of the system don't always correspond to the real nonlinear system.\\
+To summarize, the characteristics of the phase portrait change at values $c\approx0$, $c\approx a$, $c\approx0.241$, $c\approx(1+a)/2$, $c\approx0.89$ and $c \approx1$.
+
+\paragraph{Question 3}\; When plotting the phase portrait using \texttt{PPLANE}, the plots correspond to the analytical results.\\
+There can be seen that the stable manifolds of the saddle nodes often serve as separatrices that divide the phase diagram in two separate basins
+of attraction, where the trajectories of the simulations get repulsed into different stable fixed points.\\
+Unstable manifolds also serves as a boundary between two types of trajectories. Namely, trajectories that come from opposite sides of the unstable manifold, come from different
+``basins of repulsion'' and come together on the unstable manifold.\\
+The separatrices can be found by using a simulation in \texttt{PPLANE} and looking at their behaviour and location. Then an analytical technique can be applied to find the 
+exact eigendirections of the saddle node. In \Cref{fig:ph3} the basins of attraction are indicated.
+
+\paragraph{Question 4}\; Using the results from the previous questions, a qualitative overview of the phase diagram in function of c can be given.
+This is done by means of \Cref{tb:pd4}, where the most important observations are summarized. For an explanation in more detail, I refer to Question 3.
+Plots of the respective states of the system are shown in \Cref{fig:stab2}.
+The boundary cases are not treated here, as the analytical linear approximation doesn't fully correspond to the nonlinear behaviour.
+\begin{table}[H]
+	\begin{tabular}{|c|c|c|c|c|}\hline
+	& Equilibrium \eqref{eq:eq1} & Equilibrium \eqref{eq:eq2} & Equilibrium \eqref{eq:eq3} & Equilibrium \eqref{eq:eq4}\\
+	\hline
+	$0<c<a$ & Stable node & Unstable node & Saddle node & Saddle node\\\hline
+	$a < c < 0.241$ & Stable node & Saddle node & Saddle node & Unstable node\\\hline
+	$0.241 < c < (1+a)/2$ & Stable node & Saddle node & Saddle node & Unstable spiral\\\hline
+	$(1+a)/2 < c < 0.89$ & Stable node & Saddle node & Saddle node & Stable spiral\\\hline
+	$0.89 < c < 1$ & Stable node & Saddle node & Saddle node & Stable node\\\hline
+	$c>1$ & Stable node & Saddle node & Stable node & Saddle node \\\hline
+	\end{tabular}
+	\captionsetup{width=0.9\textwidth}
+	\caption{Evolution of the equilibrium points in function of $c$.}
+	\label{tb:pd4}
+\end{table}
+For \Cref{eq:eq4}, the evolution of the eigenvalues of the Jacobian in function of $c$ in the complex plane can be seen in \Cref*{fig:ev4}, two plots for 
+both the real and imaginary part. There can be seen that a pair of real eigenvalues transition into a pair of complex conjugate eigenvalues at $c\approx0.241$.
+Later they transition back into a pair of real eigenvalues at $c\approx 0.89$. In the phase plane these transitions correspond to going from a node to a spiral, 
+and then back to a node.\\
+When looking at the real part, there can be seen that sometimes one or both eigenvalues change sign, which has a change of stability characteristics as a consequence.
+Looking at the nodes, the real part simply decides the stability of them. In this case a saddle node is present for $0<c<a=0.2$ and $c<1$, an unstable node for 
+$a<c<0.241$ and a stable node for $0.89<c<1$. In between one of the eigenvalues is zero and a degenerate node is present.\\
+For the spirals, the real part of both eigenvalues switches sign at $c\approx(1+a)/2=0.6$, and like this a stable spiral ($0.241<c<0.6$) transitions into an 
+unstable spiral ($0.6<c<0.89$). 
+This indicates that a Hopf bifurcation is present at $c\approx0.6$. To decide whether it is a super- or subcritical one, 
+the numerical phase portrait was inspected. From there the behaviour of a supercritical Hopf bifurcation can be deducted, see also \Cref{fig:bf4}.
+
+\paragraph{Question 5}\; The interval $[c_1,c_2]$ that was given to me is $[0.51,0.61]$. The global bifurcation that is in play here looks like a homoclinic bifurcation,
+but this time interacting with two saddle nodes instead of one, so it could be called a heteroclinic bifurcation.
+at $c\approx0.54$. For $0.51<c<0.54$, there is no limit cycle present, just an unstable orbit at \Cref{eq:eq4}. For values $0.54<c<0.61$ there arises a limit cycle at \Cref{eq:eq4}
+that is trapped between the two stable manifolds of saddle nodes \Cref{eq:eq2} and \Cref{eq:eq3}. The larger $c$ gets, the smaller the orbit, till it completely disappears
+at $c\approx(1+a)/2=0.6$ and a stable spiral arises, i.e. the Hopf bifurcation mentioned in Question 4.
+The bifurcation can be verified by using the scaling law for the period of the limit cycle. This period $T$ can be approximated by numerically solving the system
+sufficiently far in time for $x$ and $y$ and observing the periods that arise for $0.54<c<0.61$. A clear logarithmic behaviour is seen when $c$ is increased above 0.54 which
+corresponds to the scaling law of the period of the cycle for a homoclinic bifurcation (ln($\mu$)). This is shown in \Cref{fig:T5} where the period of the limit cycle (which
+is the same as the one for $x(t)+y(t)$) is monitored in function of $c$.
+Also, for values of $c_{crit}$ around the bifuration, the period becomes infinite because the trajectories get stuck in the heteroclinic orbit, which removes the periodicity.
+A figure for the critical value $c_{crit}=0.54$ is shown in \Cref{fig:homcl5}.
+
+\paragraph{Question 6}\; The evolution of the solutions for two different limit cycles is studied. For this, the equilibrium point that was studied in Question 4 can be used.
+\begin{itemize}
+	\item[\textbf{i.}] When $c\approx0.54$, a limit cycle close to a heteroclinic cycle is present. There can be seen that both $x$ and $y$
+	(but in particular $y$) have peaked oscillations with a sharp maximum but a smoother minimum. These peaks most likely occur by the saddle points it interacts with,
+	as the limit cycle becomes a more discontinuous there. Both oscillations look quite different, both in shape and in amplitude, this is because of the 
+	irregular shape of the limit cycle. 
+	\item[\textbf{ii.}] For values of $c\approx0.6$, the limit cycle becomes a lot smaller and almost disappears, but the shape of it comes close to a regular circle,
+	which indicates a harmonic oscillation. Indeed, when looking at the solutions, a sinusoidal behaviour can be noticed in both solutions, which points to a harmonic 
+	oscillation. Both $x$ and $y$ look very similar, both in shape and in amplitude. Only a phase shift between the two is present.
+\end{itemize}
+Simulations of both cases have been performed and their solutions are depicted in \Cref{fig:cycl6}.
+\subsection{Bifurcation analysis}
+\paragraph{Question 1}\; The bifurcation diagram for $d=0$ in the $(c,x)$-plane is drawn in \Cref{fig:bifd0}. Green represents the saddle nodes, red the unstable nodes/spirals and
+blue the stable nodes/spirals. The four equilibrium points can be distinguished easily. Three of the equilibria are horizontal lines, as their location doesn't change, 
+namely Equilibrium \eqref{eq:eq1}, \eqref{eq:eq2} and \eqref{eq:eq3}. Equilibrium \eqref{eq:eq4} has $x^*=c$, so a line with slope 1 is present, and sometimes interacts with 
+the horizontal lines.
+There can be seen that two bifurcation points are present,
+both of which represent transcritical bifurcations: 
+\begin{itemize}
+	\item $\mathbf{c\approx a=0.2}$: This is the point where Equilibrium \eqref{eq:eq2} transitions from an unstable node to a saddle node, and where \eqref{eq:eq4} becomes
+	an unstable node, coming from a saddle node. 
+	\item $\mathbf{c\approx 1}$: Here Equilibrium \eqref{eq:eq4} transitions from a stable node back to a saddle node. Equilibrium \eqref{eq:eq3} goes from a saddle node to 
+	stable node.
+\end{itemize}
+Equilibrium \eqref{eq:eq1} stays a stable node throughout, as seen before. At $c\approx (1+a)/2$, the stability of Equilibrium \eqref{eq:eq4} changes, as it goes from an 
+unstable spiral to a stable one, as also seen in the previous analysis.\\
+The plot for the $(c,y)$-plane is also included in \Cref{fig:bifd0} because it is useful for the next question, and the interval $[-0.5,0.1]$ of $c$ is purely illustrative. 
+
+\paragraph{Question 2}\; When $d$ is taken different from zero, the bifurcation diagram changes and the transcritical bifurcations split into saddle node bifurcations.
+The intervals where $c\in[-0.5, 0.1]$ are meant as an illustration for what the branches look like further down the road.\\
+\begin{itemize}
+	\item[\boxed{\mathbf{d=0.01}}  ] The plot of the bifurcation diagram in the $(c,x)$- and $(c,y)$-plane is depicted in \Cref{fig:bifd+}.
+	\begin{itemize}
+		\item $\mathbf{(c,x)\text{-plane}}$:  Here can be seen that both transcritical bifurcations disappear compared to $d=0$. The one at $c\approx1$ splits up into two saddle node 
+		bifurcations, while the branches bifurcation at $c\approx a$ move away from each other so that the bifuration point vanishes.
+		\item $\mathbf{(c,y)\text{-plane}}$:  The same thing happens in the $(c,y)$ projection. The branches are located differently and have a different shape.
+		When $d=0$, the first three equilibria all overlap as they all habe $y^*=0$. Equilibrium \eqref{eq:eq4} is quadratic in $c$ so this forms a parabola which intersects the
+		$y=0$-line, causing transcritical bifurcations as well.\\
+		For $d=0.01$, the bifuration point at $c\approx1$ again splits up into two turning points and at $c\approx a$ the bifurcation disappears.
+	\end{itemize}
+	\item[\boxed{\mathbf{d=-0.01}}  ] The bifurcation diagrams are shown in \Cref{fig:bifd-}
+\end{itemize}
+
+
 \end{document}
